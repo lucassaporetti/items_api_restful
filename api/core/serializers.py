@@ -5,8 +5,8 @@ from .models import Item
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ['ENTITY_ID', 'NAME', 'CATEGORY', 'ITEM_TYPE', 'DESCRIPTION', 'ATTRIBUTES',
-                  'CONSUME_MP', 'CONSUME_HEART', 'STATISTICS_HP', 'STATISTICS_MP', 'STATISTICS_HEART',
-                  'STATISTICS_STR', 'STATISTICS_ATT', 'STATISTICS_GOLD', 'STATISTICS_CON', 'STATISTICS_DEF',
-                  'STATISTICS_MAX_HT', 'STATISTICS_INT', 'STATISTICS_LCK', 'STATISTICS_MAX_HP', 'SELL',
-                  'FOUND_AT', 'DROPPED_BY', 'EFFECT', 'IMAGE', 'ANIMATION', 'SPECIAL_ANIMATION']
+        fields = ['entity_id', 'name', 'category', 'item_type', 'description', 'attributes',
+                  'consume_mp', 'consume_heart', 'statistics_hp', 'statistics_mp', 'statistics_heart',
+                  'statistics_str', 'statistics_att', 'statistics_gold', 'statistics_con', 'statistics_def',
+                  'statistics_max_ht', 'statistics_int', 'statistics_lck', 'statistics_max_hp', 'sell',
+                  'found_at', 'dropped_by', 'effect', 'image', 'animation', 'special_animation']
