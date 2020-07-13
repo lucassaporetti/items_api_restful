@@ -16,9 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, include
+from items.views import ItemViewSet
 from rest_framework import routers
-from core.views import ItemViewSet
-
 
 router = routers.DefaultRouter()
 router.register(r'items', ItemViewSet)
