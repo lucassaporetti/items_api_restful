@@ -32,9 +32,9 @@ class Item(models.Model):
     found_at = models.CharField(max_length=100, default='NONE', blank=True)
     dropped_by = models.CharField(max_length=100, default='NONE', blank=True)
     effect = models.CharField(max_length=1000, default='Without Effect', blank=True)
-    image = models.ImageField(default='Without Image', null=True)
-    animation = models.ImageField(default='Without Animation', null=True)
-    special_animation = models.ImageField(default='Without Special Animation', null=True)
+    image = models.CharField(max_length=50000, default='Without Image', null=True)
+    animation = models.CharField(max_length=50000, default='Without Animation', null=True)
+    special_animation = models.CharField(max_length=50000, default='Without Special Animation', null=True)
 
     def __str__(self):
         return self.name
